@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F7FAB577-B062-796A-0BA4-7FB95E7E7BC7" containerWithKeyObject="353CCCBC-4D1B-E101-092E-228C038AF484" localFKIndex="44EA4F38-70CC-A4F8-C7C0-1639D13FA950" name="Payments_Drivers_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>05847DF4-FADC-D9E2-7E8A-48EB933A2FBC</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<referredTableLongName>Drivers</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1259772F-CE50-FE70-FB5C-14914354D3C1</referredTableID>
+<keyObject>67517AB9-0ED4-F0F0-6CF4-0F250C22F433</keyObject>
+<referredKeyID>67517AB9-0ED4-F0F0-6CF4-0F250C22F433</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>driver_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

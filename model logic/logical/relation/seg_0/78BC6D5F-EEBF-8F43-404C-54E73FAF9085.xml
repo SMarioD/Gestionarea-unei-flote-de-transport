@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Maintenance_vehicle_fk" directorySegmentName="seg_0" id="78BC6D5F-EEBF-8F43-404C-54E73FAF9085">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:25:45 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<sourcePk>7BF5BF9A-3CD7-9AEF-5EEC-9766FC2DBE86</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>poate avea</nameOnSource>
+<nameOnTarget>repara o</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>06D686B3-25AD-9138-853B-319696EAB8B7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>78960D91-62FA-69AB-4509-69EC2B773D14</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

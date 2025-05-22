@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1259772F-CE50-FE70-FB5C-14914354D3C1" name="Drivers">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>F5E88CD3-2ACB-9386-6BEA-D09750B7D7CE</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="driver_id" id="B690ED04-C048-415C-D3C5-F6A1882594F2">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>3AF79DCB-CD30-5537-8470-EB45B77C2E8E</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="77452272-24E8-1F5F-3C37-80CEE1B47DBF">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>CFA36D01-8961-FF07-3E81-BC44D8805DBA</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="license_number" id="72B0F4E0-E826-07F0-6EA2-30F0403A3748">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>D3EFF222-7130-B6F1-FED3-2DF6A0436B8D</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="2E0BA667-B89D-F3CD-42E2-43F879FEC06A">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>8F6BDA5C-F754-81CF-0691-9A4D2DB3C9D1</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="action" id="093607DB-502D-F937-D8B0-902EA4A7BC65">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>AE9D26B2-2E73-93DA-A432-8C04E4D8E564</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departments_department_id" id="2C4F2593-EC31-A304-1757-3C5A2D437814">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>A4F0D3A2-CD3D-DE69-2D83-859B84E792BB</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="899F9810-7015-57BC-7644-A5568C0C9310" referredColumn="FFD3A790-0E3D-3184-FF96-3E78197A377F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67517AB9-0ED4-F0F0-6CF4-0F250C22F433" name="Drivers_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>8601A59C-4E43-194A-1EDC-607E2B57EA4E</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B690ED04-C048-415C-D3C5-F6A1882594F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59AED28F-0F6B-9A9C-203C-F50A4FEA41F2" name="Drivers_license_number_UN">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>A5DF9D7D-401C-AE6F-8F1E-256B72236E72</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72B0F4E0-E826-07F0-6EA2-30F0403A3748"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F862D8C-4A8C-A19E-968F-8C268E0CB32A" name="Drivers_Departments_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>97173E5E-FD4D-5F6A-5777-A3FF5EA3C5AB</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C4F2593-EC31-A304-1757-3C5A2D437814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

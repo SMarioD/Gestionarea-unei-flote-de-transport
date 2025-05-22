@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="353CCCBC-4D1B-E101-092E-228C038AF484" name="Payments">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>FF750319-1D7F-1E99-F97C-8CE610226675</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="payment_id" id="8853F0F4-9626-B786-8D9F-880DF0058A64">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>5C5DF7E0-4B5D-8C3A-6857-8A0E9BB76528</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount" id="8F4E9532-6812-DEB4-4818-0A294FD1001B">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>A846E503-B81B-A6DB-E8E5-4300956044E3</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_date" id="ECC7498F-024D-6303-601B-09D6D2494D90">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>483B55C9-6F6A-EA6F-A2C4-A65892C37793</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Drivers_driver_id" id="38F99F30-60D1-177E-8BAC-7837DD186F0C">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>408E50EB-DF5D-28E2-FFF9-39F78B204B8A</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7FAB577-B062-796A-0BA4-7FB95E7E7BC7" referredColumn="B690ED04-C048-415C-D3C5-F6A1882594F2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F0B006F-C89F-C571-1705-1BE8019E5804" name="Payments_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>CE7D0DF8-237F-611D-92D7-087B910FEFE5</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8853F0F4-9626-B786-8D9F-880DF0058A64"/>
+<colUsage columnID="38F99F30-60D1-177E-8BAC-7837DD186F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EA4F38-70CC-A4F8-C7C0-1639D13FA950" name="Payments_Drivers_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>05847DF4-FADC-D9E2-7E8A-48EB933A2FBC</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38F99F30-60D1-177E-8BAC-7837DD186F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

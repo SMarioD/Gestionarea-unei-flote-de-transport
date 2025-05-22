@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Drivers_Department_FK" directorySegmentName="seg_0" id="97173E5E-FD4D-5F6A-5777-A3FF5EA3C5AB">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:31:29 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<sourcePk>23CEAF7F-61C1-F443-AD54-D38A10CE8CF8</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>poate avea</nameOnSource>
+<nameOnTarget>apartine unui</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>152E4EF1-AF16-B32E-8094-3382BC1709BD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F5E88CD3-2ACB-9386-6BEA-D09750B7D7CE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

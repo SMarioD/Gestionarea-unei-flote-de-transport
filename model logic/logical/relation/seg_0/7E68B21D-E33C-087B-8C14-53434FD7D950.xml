@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Routes" directorySegmentName="seg_0" id="7E68B21D-E33C-087B-8C14-53434FD7D950">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:28:52 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<sourcePk>6EF4B8EE-57CF-ED55-5BA3-63279397C5DB</sourcePk>
+<targetPk>C9E1E420-6C72-AEE9-F57E-B095126BD005</targetPk>
+<identifying>false</identifying>
+<nameOnSource>are un</nameOnSource>
+<nameOnTarget>are un</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>152E4EF1-AF16-B32E-8094-3382BC1709BD</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5A66680C-0F58-0485-38B5-5B41B44C0AC1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

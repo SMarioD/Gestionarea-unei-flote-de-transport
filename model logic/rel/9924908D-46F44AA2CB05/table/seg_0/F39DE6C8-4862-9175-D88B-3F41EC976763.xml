@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F39DE6C8-4862-9175-D88B-3F41EC976763" name="Maintenance">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>78960D91-62FA-69AB-4509-69EC2B773D14</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="maintenance_id" id="80D73277-676A-BCA8-1BA8-6C6932FA0F59">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>9688FCD3-0287-1C4F-7FAA-A4F2256EE9B8</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="maintenance_date" id="CBE402A9-2EA3-0758-BAB4-3C6CC5E5CC1A">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>0632102B-8562-86BB-EC5E-301449B1B054</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="details" id="314E9E13-4634-16CB-093A-3570D699DA27">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>1A2F6C97-56CA-639E-C6E4-11F0BCB5BF50</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vehicles_vehicle_id" id="7C980CEC-5A2E-6544-C4E2-11AB993E238C">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>021DFE86-B698-206D-B71D-5E7E6522DFD6</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="975F3565-4255-9173-6F09-0FA710C2F98C" referredColumn="C3CF8839-AF64-D60A-F56C-F96809D22C70"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CAACCB48-2F9A-1F64-4D26-447CF8BFCB96" name="Maintenance_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>9E23BEB9-072F-A69D-D895-F160C379F4EF</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80D73277-676A-BCA8-1BA8-6C6932FA0F59"/>
+<colUsage columnID="7C980CEC-5A2E-6544-C4E2-11AB993E238C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57DA3197-A8A6-57E7-43ED-A3937BA65E5F" name="Maintenance_Vehicles_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>78BC6D5F-EEBF-8F43-404C-54E73FAF9085</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C980CEC-5A2E-6544-C4E2-11AB993E238C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

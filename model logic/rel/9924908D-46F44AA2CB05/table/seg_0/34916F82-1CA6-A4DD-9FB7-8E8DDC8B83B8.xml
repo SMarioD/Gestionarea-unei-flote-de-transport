@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34916F82-1CA6-A4DD-9FB7-8E8DDC8B83B8" name="Departments">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>152E4EF1-AF16-B32E-8094-3382BC1709BD</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="department_id" id="FFD3A790-0E3D-3184-FF96-3E78197A377F">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>1958CC36-CEB8-A615-F712-7D96496CF1CF</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="department_name" id="167FE7FC-EE16-4574-B2D8-4DABFD6B53CE">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>9511D004-D683-2203-1A2B-2E7AE7B60766</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location" id="0D306D67-FAA8-12D3-F4EB-BCA970263469">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>84EA9FCC-2DB5-94BC-B8DA-CD410D27AEB5</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="route_id" id="92EDF9FB-55D9-F78F-8AE0-67EE1C450920">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>E1B469F5-CC63-66DA-7B87-81F4B1AAA8C3</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FE42249-8C6C-267F-BF2D-E8CB1F69E2A7" name="Departments_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>23CEAF7F-61C1-F443-AD54-D38A10CE8CF8</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFD3A790-0E3D-3184-FF96-3E78197A377F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33E4EFA0-FD2D-C759-2329-B8831B9AF891" name="Departments_route_id_UN">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>6EF4B8EE-57CF-ED55-5BA3-63279397C5DB</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92EDF9FB-55D9-F78F-8AE0-67EE1C450920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

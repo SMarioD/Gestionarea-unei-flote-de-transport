@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="152E4EF1-AF16-B32E-8094-3382BC1709BD" name="Departments ">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:31:22 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="department_id " id="1958CC36-CEB8-A615-F712-7D96496CF1CF">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:31:30 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="department_name " id="9511D004-D683-2203-1A2B-2E7AE7B60766">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:31:44 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="location" id="84EA9FCC-2DB5-94BC-B8DA-CD410D27AEB5">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:33:45 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="route_id" id="E1B469F5-CC63-66DA-7B87-81F4B1AAA8C3">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:23:58 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23CEAF7F-61C1-F443-AD54-D38A10CE8CF8" name="Departments_pk">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:34:33 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>1958CC36-CEB8-A615-F712-7D96496CF1CF</newElementsIDs>
+<usedAttributes>
+<attributeRef>1958CC36-CEB8-A615-F712-7D96496CF1CF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6EF4B8EE-57CF-ED55-5BA3-63279397C5DB" name="route_id_unique">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:25:08 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="false"/>
+</engineerTo>
+<newElementsIDs>E1B469F5-CC63-66DA-7B87-81F4B1AAA8C3</newElementsIDs>
+<usedAttributes>
+<attributeRef>E1B469F5-CC63-66DA-7B87-81F4B1AAA8C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

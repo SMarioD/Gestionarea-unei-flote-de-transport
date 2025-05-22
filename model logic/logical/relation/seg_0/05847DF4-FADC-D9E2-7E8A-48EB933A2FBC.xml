@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Payments_driver_fk" directorySegmentName="seg_0" id="05847DF4-FADC-D9E2-7E8A-48EB933A2FBC">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:37:49 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<sourcePk>8601A59C-4E43-194A-1EDC-607E2B57EA4E</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>are mai multe</nameOnSource>
+<nameOnTarget>ofera un</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F5E88CD3-2ACB-9386-6BEA-D09750B7D7CE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FF750319-1D7F-1E99-F97C-8CE610226675</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

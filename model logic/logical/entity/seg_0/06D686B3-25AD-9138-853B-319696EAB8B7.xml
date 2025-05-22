@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="06D686B3-25AD-9138-853B-319696EAB8B7" name="Vehicles">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 18:59:22 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="vehicle_id" id="A6F6A141-4BB9-9E2D-10D6-EEB5B5D58E95">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 18:59:33 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="make" id="30A44A6E-F244-F005-3310-14A4E4BDBB57">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:00:55 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model" id="60955E37-D6DE-6649-4284-A49F2A3A1CDA">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:02:52 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="year" id="B567B77C-335B-26EF-DA6E-6116D3BC9068">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:03:10 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vin" id="A5A0094E-0D0A-508C-8758-47DDEAD61BBA">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:03:22 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="location" id="8418D620-64A3-7774-BE6B-806B927E4ABE">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:03:42 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_id" id="5F6B4163-3E66-9E00-5EFD-FC023CB1C3C6">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:32:46 UTC</createdTime>
+<generatorID>C91FD1CB-CA9F-9DCC-34CA-58463DCAB4CB</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<referedAttribute>3AF79DCB-CD30-5537-8470-EB45B77C2E8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BF5BF9A-3CD7-9AEF-5EEC-9766FC2DBE86" name="Vehicles_pk">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:04:21 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>A6F6A141-4BB9-9E2D-10D6-EEB5B5D58E95</newElementsIDs>
+<usedAttributes>
+<attributeRef>A6F6A141-4BB9-9E2D-10D6-EEB5B5D58E95</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3DE76CC9-7B81-78FA-1FA5-FAD3270AF7A4" name="vin_uk">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:25:51 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="false"/>
+</engineerTo>
+<newElementsIDs>A5A0094E-0D0A-508C-8758-47DDEAD61BBA</newElementsIDs>
+<usedAttributes>
+<attributeRef>A5A0094E-0D0A-508C-8758-47DDEAD61BBA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="78960D91-62FA-69AB-4509-69EC2B773D14" name="Maintenance ">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:59:18 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="maintenance_id " id="9688FCD3-0287-1C4F-7FAA-A4F2256EE9B8">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:59:25 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="maintenance_date " id="0632102B-8562-86BB-EC5E-301449B1B054">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 19:59:47 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="details " id="1A2F6C97-56CA-639E-C6E4-11F0BCB5BF50">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:00:14 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vehicle_id" id="021DFE86-B698-206D-B71D-5E7E6522DFD6">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:25:45 UTC</createdTime>
+<generatorID>78BC6D5F-EEBF-8F43-404C-54E73FAF9085</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<referedAttribute>A6F6A141-4BB9-9E2D-10D6-EEB5B5D58E95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9E23BEB9-072F-A69D-D895-F160C379F4EF" name="Maintenance_pk">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:00:57 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9688FCD3-0287-1C4F-7FAA-A4F2256EE9B8,78BC6D5F-EEBF-8F43-404C-54E73FAF9085</newElementsIDs>
+<usedAttributes>
+<attributeRef>9688FCD3-0287-1C4F-7FAA-A4F2256EE9B8</attributeRef>
+<attributeRef>021DFE86-B698-206D-B71D-5E7E6522DFD6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

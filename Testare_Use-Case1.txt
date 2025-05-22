@@ -1,0 +1,90 @@
+--Deplasarea unei masini dintr-un punct ales cu un sofer ales verificand valabilitatea masinii si a soferului cand este dorita comanda
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+    v_driver_id INT := 1;  -- ID-ul șoferului pe care îl dorim (îl alegem pe 1)
+    v_vehicle_id INT := 1;  -- ID-ul vehiculului pe care vrem să-l alocăm
+    v_route_start VARCHAR2(100) := 'Bucuresti';  -- Locatia de plecare
+    v_route_end VARCHAR2(100) := 'Constanta';  -- Locatia de destinație
+    v_maintenance_date DATE;
+    v_vehicle_location VARCHAR2(100);
+    v_status NUMBER(1);  -- Declarația variabilei v_status
+    v_details VARCHAR2(255);  -- Declarația variabilei v_details pentru concatenarea detaliilor
+BEGIN
+    -- Verificăm dacă șoferul este ocupat
+    BEGIN
+        SELECT status INTO v_status FROM Drivers WHERE driver_id = v_driver_id;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('Șoferul nu există.');
+            RETURN;
+    END;
+    
+    IF v_status = 1 THEN
+        DBMS_OUTPUT.PUT_LINE('Sofer ocupat');
+        RETURN;
+    END IF;
+
+    -- Verificăm dacă vehiculul este într-o zi de mentenanță
+    BEGIN
+        SELECT maintenance_date INTO v_maintenance_date
+        FROM Maintenance
+        WHERE vehicle_id = v_vehicle_id
+        AND TO_CHAR(maintenance_date, 'YYYY-MM-DD') = TO_CHAR(SYSDATE, 'YYYY-MM-DD'); -- Compară cu data curentă
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            v_maintenance_date := NULL;  -- Nicio mentenanță găsită
+    END;
+
+    IF v_maintenance_date IS NOT NULL THEN
+        DBMS_OUTPUT.PUT_LINE('Zi indisponibila');
+        RETURN;
+    END IF;
+
+    -- Verificăm locația vehiculului
+    BEGIN
+        SELECT location INTO v_vehicle_location FROM Vehicles WHERE vehicle_id = v_vehicle_id;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('Vehiculul nu există.');
+            RETURN;
+    END;
+
+    IF v_vehicle_location != v_route_start THEN
+        DBMS_OUTPUT.PUT_LINE('Vehiculul nu se află în locația dorită');
+        RETURN;
+    END IF;
+
+    -- Dacă nu sunt probleme, actualizăm statusul șoferului și locația vehiculului
+    -- Schimbăm statusul șoferului în 1 (ocupat)
+    UPDATE Drivers
+    SET status = 1
+    WHERE driver_id = v_driver_id;
+
+    -- Actualizăm locația vehiculului la destinația dorită
+    UPDATE Vehicles
+    SET location = v_route_end
+    WHERE vehicle_id = v_vehicle_id;
+
+    -- Adăugăm intrarea în tabelul Maintenance pentru această dată
+    INSERT INTO Maintenance (maintenance_id, vehicle_id, maintenance_date, details)
+    VALUES (maintenance_seq_new.NEXTVAL, v_vehicle_id, SYSDATE, 'Ruta: ' || v_route_end);
+
+    -- Incrementăm câmpul 'actions' pentru șoferul respectiv
+    UPDATE Drivers
+    SET actions = actions + 1
+    WHERE driver_id = v_driver_id;
+
+    -- Schimbăm statusul șoferului în 0 (liber) după ce acțiunea a fost finalizată
+    UPDATE Drivers
+    SET status = 0
+    WHERE driver_id = v_driver_id;
+
+    -- Ștergem înregistrarea din tabela Maintenance folosind vehicle_id și maintenance_date
+    DELETE FROM Maintenance
+    WHERE vehicle_id = v_vehicle_id
+    AND TO_CHAR(maintenance_date, 'YYYY-MM-DD') = TO_CHAR(SYSDATE, 'YYYY-MM-DD');
+
+    COMMIT;
+END;

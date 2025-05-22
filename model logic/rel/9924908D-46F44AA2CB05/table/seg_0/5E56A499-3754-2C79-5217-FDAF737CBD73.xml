@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E56A499-3754-2C79-5217-FDAF737CBD73" name="Routes">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>5A66680C-0F58-0485-38B5-5B41B44C0AC1</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<minVolumes>1</minVolumes>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="route_id" id="9614BC22-31E6-226F-573C-006BC1C90120">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>6E90496A-B88A-4931-3679-0AA34E171420</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_location" id="7AFFD605-3134-85AB-86ED-F64197441F20">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>10DD4A57-FC72-F2F1-9ACE-175C55A78212</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_location" id="3627B167-AF28-44B6-EE14-EBEC12B15819">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>063702DB-F6B2-601E-3BF6-E0ACCC73B66A</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="distance" id="5D52406A-7315-5787-842A-8F44A3900CB1">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>63E9D56A-38E1-8664-EFB1-D5CDFC1CB02E</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departments_route_id" id="D0EC4359-C789-4B08-832D-BBD5D0957D6F">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>9C20E089-0904-89BC-7541-4C6C12C121DF</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D2D9FBA-BCDF-8293-BC63-D9450F8273D1" referredColumn="92EDF9FB-55D9-F78F-8AE0-67EE1C450920"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A98618B9-94D6-29AA-C5FA-28B1A892D049" name="Routes_PK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>C9E1E420-6C72-AEE9-F57E-B095126BD005</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9614BC22-31E6-226F-573C-006BC1C90120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1F7BEB5-852D-BE80-326F-B9D58FC4E33E" name="Routes__IDX">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7E68B21D-E33C-087B-8C14-53434FD7D950</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D0EC4359-C789-4B08-832D-BBD5D0957D6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B65994F0-8E83-FBC4-AFFD-FEBB05EF007C" name="Routes_Departments_FK">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 21:37:47 UTC</createdTime>
+<generatorID>7E68B21D-E33C-087B-8C14-53434FD7D950</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0EC4359-C789-4B08-832D-BBD5D0957D6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

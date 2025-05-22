@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF750319-1D7F-1E99-F97C-8CE610226675" name="Payments ">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:35:26 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="payment_id " id="5C5DF7E0-4B5D-8C3A-6857-8A0E9BB76528">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:35:34 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="amount" id="A846E503-B81B-A6DB-E8E5-4300956044E3">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:35:53 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payment_date " id="483B55C9-6F6A-EA6F-A2C4-A65892C37793">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:36:07 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_id" id="408E50EB-DF5D-28E2-FFF9-39F78B204B8A">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:37:49 UTC</createdTime>
+<generatorID>05847DF4-FADC-D9E2-7E8A-48EB933A2FBC</generatorID>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<referedAttribute>3AF79DCB-CD30-5537-8470-EB45B77C2E8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CE7D0DF8-237F-611D-92D7-087B910FEFE5" name="Payments_pk">
+<createdBy>mario</createdBy>
+<createdTime>2025-01-04 20:36:25 UTC</createdTime>
+<ownerDesignName>model logic</ownerDesignName>
+<engineerTo>
+<item key="9924908D-9EB3-F5C0-3B6C-46F44AA2CB05" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>5C5DF7E0-4B5D-8C3A-6857-8A0E9BB76528,05847DF4-FADC-D9E2-7E8A-48EB933A2FBC</newElementsIDs>
+<usedAttributes>
+<attributeRef>5C5DF7E0-4B5D-8C3A-6857-8A0E9BB76528</attributeRef>
+<attributeRef>408E50EB-DF5D-28E2-FFF9-39F78B204B8A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
